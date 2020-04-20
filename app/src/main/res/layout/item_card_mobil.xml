@@ -23,6 +23,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="4dp"
         android:scaleType="centerCrop"
+        android:contentDescription="fotomobil"
         tools:src="@color/colorAccent" />
         <TextView
             android:id="@+id/tv_item_nama"
@@ -66,14 +67,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/detail"
+                android:text="@string/btn_detail"
                 android:textSize="12sp" />
             <Button
                 android:id="@+id/btn_go_web"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/website"
+                android:text="@string/btn_website"
                 android:textSize="12sp" />
         </LinearLayout>
     </RelativeLayout>

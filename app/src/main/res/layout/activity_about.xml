@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainscroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:padding="8dp"
+        tools:ignore="ScrollViewSize">
+
+        <ImageView
+            android:id="@+id/img_ab_poto"
+            android:layout_width="160dp"
+            android:layout_height="240dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/rickyumri" />
+
+        <TextView
+            android:id="@+id/tv_ab_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/img_ab_poto"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="@string/nama_mhs"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_ab_nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ab_nama"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_ab_poto"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="@string/nim_mhs"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_ab_jur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ab_nim"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_ab_poto"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="@string/jur_mhs"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_ab_mk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ab_jur"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_ab_poto"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="@string/mkprak"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_ab_dosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ab_mk"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_ab_poto"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="@string/dosen"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_ab_waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ab_dosen"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_ab_poto"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="@string/waktu"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_ab_jud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Nama Lengkap :" />
+
+        <ImageView
+            android:id="@+id/im_ab_ic1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud"
+            android:src="@drawable/baseline_perm_contact_calendar_black_18dp" />
+
+        <TextView
+            android:id="@+id/tv_det_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/im_ab_ic1"
+            android:gravity="center_vertical"
+            android:text="@string/nama_mhs"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/garis1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/im_ab_ic1"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_ab_jud2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis1"
+            android:layout_marginLeft="50dp"
+            android:text="Alamat Email :" />
+
+        <ImageView
+            android:id="@+id/im_ab_ic2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud2"
+            android:src="@drawable/baseline_email_black_18dp" />
+
+        <TextView
+            android:id="@+id/tv_det_mail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud2"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/im_ab_ic2"
+            android:gravity="center_vertical"
+            android:text="@string/email1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/garis2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/im_ab_ic2"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_ab_jud3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis2"
+            android:layout_marginLeft="50dp"
+            android:text="Alamat Email Alternatif :" />
+
+        <ImageView
+            android:id="@+id/im_ab_ic3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud3"
+            android:src="@drawable/baseline_alternate_email_black_18dp" />
+
+        <TextView
+            android:id="@+id/tv_det_mail2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud3"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/im_ab_ic3"
+            android:gravity="center_vertical"
+            android:text="@string/email2"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/garis3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/im_ab_ic3"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_ab_jud4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis3"
+            android:layout_marginLeft="50dp"
+            android:text="Alamat Domisili :" />
+
+        <ImageView
+            android:id="@+id/im_ab_ic4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud4"
+            android:src="@drawable/baseline_location_on_black_18dp" />
+
+        <TextView
+            android:id="@+id/tv_det_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud4"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/im_ab_ic4"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:text="@string/alamat"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/garis4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/im_ab_ic4"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_ab_jud5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis4"
+            android:layout_marginLeft="50dp"
+            android:text="Nomor Telepon / Kontak :" />
+
+        <ImageView
+            android:id="@+id/im_ab_ic5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud5"
+            android:src="@drawable/baseline_phone_black_18dp" />
+
+        <TextView
+            android:id="@+id/tv_det_nohp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_ab_jud5"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/im_ab_ic5"
+            android:gravity="center_vertical"
+            android:text="@string/hape"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/garis5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/im_ab_ic5"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_telep"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/baseline_phone_black_18dp"
+            android:fontFamily="monospace"
+            android:text="Hubungi Saya"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
